@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Dev Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">John Watson</div>
+            <div class="logo">UI Portfolio</div>
             <ul>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#services">Services</a></li>
@@ -18,41 +19,49 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <h2>Hi, I'm John Watson</h2>
-        <h1>Web Deveveloper</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Optio ut veniam laudantium placeat dolore vel. 
-            Adipisci sint totam ratione nihil.
-        </p>
-        <div>
-            <button>Hire Me</button>
-            <button>My Portfolio</button>
+        <div class="header-content">
+            <h2>Hi, I'm John Watson</h2>
+            <h1>Web Developer</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio ut veniam laudantium placeat dolore vel. Adipisci sint totam ratione nihil.</p>
+            <div class="header-buttons">
+                <button>Hire Me</button>
+                <button>My Portfolio</button>
+            </div>
+            <img src="Profile-pic-removebg-preview.png" alt="Profile Picture" class="profile-pic">
         </div>
-        <img src="profile_pic.jpg" alt="Profile Picture" class="profile-pic">
     </header>
-    <section class="about">
-        <img src="profile_pic.jpg" alt="about pic" class="about-pic">
-        <h2>MY BIOGRAPHY</h2>
-        <h1>A Lead UI Designer & Web Developer Based In UK</h1>
-        <p>I love Graphic design and photography and have been wworking on my portfolio sice 2016.
-            I can give your business a new creative start right away! Contact me and we will discuss your project!
-        </p>
-        <p>Name: John Watson</p>
-        <p>Email: example@gmail.com</p>
-        <p>From: London, UK</p>
-        <p>Phone: +44 123 456 7890</p>
-        <div>
-            <div>Follow me</div>
-            <a href=""><img src="" alt="Behance"></a>
-            <a href=""><img src="" alt="Linkedin"></a>
-            <a href=""><img src="" alt="Facebook"></a>
-            <a href=""><img src="" alt="X"></a>
+    <section id="about" class="biography">
+        <div class="container">
+          <div class="bio-text">
+            <h6>My Biography</h6>
+            <h3>A Lead UI Designer & Web Developer based in UK</h3>
+            <p>
+              I love Graphic design and Photography and have been working on my portfolio since 2016.
+              I Can give your business a new Creative start right away! Contact me and we will discuss your projects!
+            </p>
+            <ul class="personal-info">
+              <li><span>Name:</span> John Watson</li>
+              <li><span>From:</span> London, UK</li>
+              <li><span>Email:</span> example@mail.com</li>
+              <li><span>Phone:</span> +21 234 567 8901</li>
+            </ul>
+            <div class="social">
+                <span>Follow me on</span>
+                <a href="#"><img src="Icons/behance.svg"   alt="Behance"   class="social-icon"></a>
+                <a href="#"><img src="Icons/linkedin.svg"  alt="LinkedIn"  class="social-icon"></a>
+                <a href="#"><img src="Icons/facebook.svg"  alt="Facebook"  class="social-icon"></a>
+                <a href="#"><img src="Icons/twitter.svg"   alt="Twitter"   class="social-icon"></a>
+              </div>              
+            <div class="buttons">
+              <button class="btn primary">Hire Me</button>
+              <button class="btn secondary">Download CV</button>
+            </div>
+          </div>
+          <div class="bio-image">
+            <img src="About-me.jpeg" alt="John Watson" />
+          </div>
         </div>
-        <div>
-            <button>Hire me</button>
-            <button>Download CV</button>
-        </div>
-    </section>
+      </section>      
     <section class="Services">
         <h1>What I Do For You</h1>
         <div class="service-cards">
@@ -167,12 +176,12 @@
         <div class="success-work">
             <h1>My Success Work</h1>
             <div>
-                <img src="work.jpg" alt="work 1">
-                <img src="work.jpg" alt="work 2">
-                <img src="work.jpg" alt="work 3">
-                <img src="work.jpg" alt="work 4">
-                <img src="work.jpg" alt="work 5">
-                <img src="work.jpg" alt="work 6">
+                <img src="" alt="work 1">
+                <img src="" alt="work 2">
+                <img src="" alt="work 3">
+                <img src="" alt="work 4">
+                <img src="" alt="work 5">
+                <img src="" alt="work 6">
             </div>
         </div>
         <div class="brands">
