@@ -14,111 +14,127 @@ body {
 
 /* Header Styling */
 header {
-    background: linear-gradient(to right, #0e4961, #0c3333);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(15, 51, 43, 0.9);
+  background-blend-mode: darken;
+  background-image: url(header_image.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  justify-content: center;
 }
 
 header nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0;
-    margin-right: 100px;;
+    padding: 20px;
+    color: rgb(146, 146, 146);
 }
 
 header .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: 20px;
-    margin-left: 0; /* Center-align within container */
-    padding-left: 60px;
+    color: white;
+    justify-content: center;
+    text-align: center;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    flex-direction: row;
+    justify-items: space-between;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(146, 146, 146);
     font-weight: bold;
     transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-    color: #ffdd57;
+    color: #ffffff;
 }
 
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    flex-wrap: wrap;
+}
 .header-content h2 {
     font-size: 2rem;
-    margin: 60px, 0;
-    margin-left: 0; /* Center-align within container */
-    margin-right: 950px;
-    padding-left: 40px;
 }
 
+
 .header-content h1 {
-    font-size: 3rem;
-    margin-bottom: 40px;
-    margin-left: 0; /* Center-align within container */
-    margin-right: 800px;
-    padding-left: 40px;
-    font-weight: bold;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .header-content p {
     font-size: 1.2rem;
-    margin: 20px 0;
-    margin-left: 0; /* Center-align within container */
-    margin-right: 800px;
-    padding-left: 40px;
 }
 
-.header-buttons {
+.intro {
+  display: flex;
+  padding: 0 20px;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+}
+
+.intro-buttons {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 20px;
-    margin-left: auto; /* Center-align within container */
-    margin-right: 800px;
 }
 
-.header-buttons button {
-    background: #0894a7;
-    color: #083a4e;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
+.portfolio-link {
+  width: 200px;
+  background: #a3a8a8;
+  color: #083a4e;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
-.header-buttons button:hover {
-    background: #ffc107;
+.portfolio-link:hover {
+    background: #ececec;
 }
 
+.hire-button {
+  height: 50px;
+  width: 150px;
+  background-color: #0894a7;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
 
-header {
-    position: relative;
-  }
-  
-  .profile-pic {
-    position: absolute;
-    top: 50%;              /* vertical center */
-    right: 150px;           /* pull it in from the right—tweak this until it lines up */
-    transform: translateY(-50%);
-    
-    width: 300px;  /* size of the image */
-    height: 320px;
-    border-radius: 0;
-    border: none;  /* yellow border to match your hover color */
-  }
+.hire-button:hover {
+    background-color: #06525c;
+}
+
+.profile-pic {
+}
 
   /* 1. About ME Section setup */
 .biography {
@@ -140,13 +156,11 @@ header {
     letter-spacing: 2px;
     color: #6c757d;
     font-size: 14px;
-    margin-bottom: 10px;
   }
   .bio-text h3 {
     font-size: 36px;
     font-weight: 700;
     color: #212529;
-    margin-bottom: 20px;
   }
   
   /* 3. Paragraph */
@@ -154,36 +168,29 @@ header {
     font-size: 18px;
     color: #6c757d;
     line-height: 1.6;
-    margin-bottom: 30px;
   }
   
   /* 4. Personal Info List */
   .personal-info {
     list-style: none;
-    margin-bottom: 30px;
   }
   .personal-info li {
     font-size: 16px;
-    margin-bottom: 8px;
   }
   .personal-info li span {
     font-weight: 600;
     color: #212529;
-    margin-right: 8px;
   }
   
   /* 5. Social Links */
   .social {
-    margin-bottom: 30px;
   }
   .social span {
     display: block;
     font-weight: 600;
-    margin-bottom: 10px;
     color: #212529;
   }
   .social a {
-    margin-right: 15px;
     font-size: 20px;
     color: #212529;
     transition: color 0.3s;
@@ -198,7 +205,6 @@ header {
     gap: 20px;
   }
   .btn {
-    padding: 12px 40px;
     border-radius: 50px;
     font-size: 16px;
     font-weight: 500;
@@ -242,7 +248,6 @@ header {
 .Services h1 {
     font-size: 2.5rem;
     color: #083a4e;
-    margin-bottom: 10px;
 }
 
 .service-cards {
@@ -250,7 +255,6 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     max-width: 1100px;
-    margin: 40px auto;
 }
 
 .card {
@@ -269,13 +273,11 @@ header {
 .card img {
     width: 60px;
     height: 60px;
-    margin-bottom: 20px;
 }
 
 .card h3 {
     font-size: 1.5rem;
     color: #0e4961;
-    margin-bottom: 15px;
 }
 
 .card p {
@@ -287,10 +289,8 @@ header {
 /* More Services Link */
 .Services a {
     display: inline-block;
-    margin-top: 30px;
     background-color: #0e8a9b;
     color: white;
-    padding: 12px 30px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
