@@ -16,9 +16,9 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  background-color: rgba(15, 51, 43, 0.9);
+  background-color: rgba(7, 25, 27, 0.9);
   background-blend-mode: darken;
-  background-image: url(header_image.jpeg);
+  background-image: url(Images/header_image.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,11 +29,17 @@ header {
 
 header nav {
   display: flex;
+  width: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px;
   color: rgb(146, 146, 146);
+  background-color: rgba(7, 25, 27, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  gap: 300px;
 }
 
 header .logo {
@@ -98,15 +104,28 @@ header nav ul li a:hover {
   text-align: left;
 }
 
+@keyframes typing {
+  from { width: 0; }
+  to { width: var(--target-width); }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
 .intro h1 {
-    margin-bottom: 24px;
-    font-size: 72px;
+  margin-bottom: 24px;
+  font-size: 72px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .intro h2 {
     font-size: 36px;
     margin-bottom: 24px;
 }
+
 .intro-buttons {
     display: flex;
     justify-content: left;
@@ -115,13 +134,14 @@ header nav ul li a:hover {
 }
 
 .portfolio-link {
-  width: 200px;
-  background: #a3a8a8;
-  color: #083a4e;
-  border: none;
+  width: 150px;
+  background: #a3a8a875;
+  color: #ffffff;
+  border: solid 0.5px #f1f1f1;
   border-radius: 50px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: large;
   transition: background 0.3s;
 }
 
@@ -137,7 +157,7 @@ header nav ul li a:hover {
   border-radius: 30px;
   color: white;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
   transition: background 0.3s;
 }
 
@@ -145,7 +165,8 @@ header nav ul li a:hover {
     background-color: #06525c;
 }
 
-
+.profile-pic {
+}
 
 /* About Me Section*/
 .biography {
